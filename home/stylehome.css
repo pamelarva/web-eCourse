@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+    * {
+      padding: 0;
+      box-sizing: border-box;
+      outline: none;
+      border: none;
+      font-family: "Poppins";
+      transition: 0.2s linear;
+    }
+
+    body {
+      margin: 0;
+      justify-content: center;
+      align-items: center;
+      background: #e8eaff;
+      margin-top: 120px;
+      overflow-x: hidden;
+    }
+
+    /* HEADER */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 9vh;
+      width: 100%;
+      color: #ffffff;
+      z-index: 999;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80px;
+      padding: 0 20px;
+      color: #fff;
+      background-color: rgb(13, 19, 79);
+      transition: background-color 0.3s;
+      z-index: 1000;
+    }
+
+    nav.transparent {
+      background-color: rgb(13, 19, 79, 0.7);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      margin-left: 30px;
+    }
+
+    .logo-img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .logo-title {
+      color: #fff;
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .nav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav li {
+      display: inline-block;
+      margin-right: 10px;
+      width: auto;
+    }
+
+    .nav li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+    }
+
+    .nav li a:hover {
+      color: #f29727;
+      text-decoration: none;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-menu {
+      cursor: pointer;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #101965;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      border-radius: 20px;
+    }
+
+    .dropdown-menu li {
+      margin-bottom: 5px;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+      transition: all 0.2s ease;
+    }
+
+    .dropdown-menu li a:hover {
+      background-color: #192484;
+      color: #e8eaff;
+    }
+
+    .lgn-btn {
+      background-color: #0c134f;
+      color: #e8eaff;
+      padding: 12px;
+      border-radius: 10px;
+    }
+
+    .lgn-btn:hover {
+      color: #e8eaff;
+      background-color: #0111a4;
+    }
+
+    .d-grid a {
+      margin-right: 30px;
+      color: white;
+    }
+
+/* BAKAT */
+body .bakat {
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 140px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    height: 700px;
+  }
+  
+  .kartu1 {
+    padding-top: 100px;
+    color: #0c134f;
+  }
+  
+  .kartu1 h2 {
+    font-size: 300%;
+  }
+  
+  .kartu1 button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 3px solid #f29727;
+    background-color: transparent;
+    color: #f29727;
+    text-decoration: none;
+    font-weight: 500;
+    animation: shake 2s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+      0% {
+        transform: translateX(0);
+      }
+      25% {
+        transform: translateX(-2px);
+      }
+      50% {
+        transform: translateX(2px);
+      }
+      75% {
+        transform: translateX(-2px);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+  
+  .kartu1 button:hover {
+    background-color: #f29727;
+    color: #e8eaff;
+    border: none;
+  }
+  
+  .kartu2 img {
+    width: 150%;
+    margin-left: 100px;
+    transition: transform 0.3s;
+  }
+  
+  .kartu2 img:hover {
+      transform: scale(1.05);
+  }
+  
+  /* UNGGULAN */
+  .unggul{
+      background-color: #e88915;
+      color: #e8eaff;
+      border-radius: 30px;
+      text-align: center;
+      margin: 0 auto;
+      width: 70%;
+      height: 10vh;
+  }
+
+  /* KENAPA HARUS BELAJAR DISINI */
+#BLJR {
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 140px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    text-align: left;
+  }
+  
+  #img-belajar {
+    width: 100%;
+  }
+  
+  .belajar .bljr1 {
+    width: 20%;
+  }
+  
+  .bljr,
+  #bljr1 h1 {
+    width: 100%;
+    margin: 0;
+    margin-top: 30px;
+    margin-left: 140px;
+    text-align: left;
+  }
+  
+  #bljr1 h1 {
+    font-weight: 800;
+  }
+  .bljr img {
+    width: 30px;
+    animation: floating 2s ease-in-out infinite;
+  }
+  
+  @keyframes floating {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .bljr td {
+    padding-right: 100px;
+    border: none;
+  }
+  
+  .bljr h5 {
+    margin-top: 0;
+    font-weight: 700;
+  }
+  
+  .bljr p {
+    margin-bottom: 0;
+  }
+
+  /* KATALOG TERFAVORIT */
+ktlgcontent h2 {
+    color: #0c134f;
+    justify-content: center;
+    text-align: center;
+    font-size: 200%;
+    font-weight: bolder;
+  }
+  ktlgcontent h5 {
+    font-size: 100%;
+    color: #0c134f;
+    justify-content: center;
+    text-align: center;
+  }
+  .box h4 {
+    color: white;
+    justify-content: center;
+    text-align: center;
+  }
+  .Kelas h5 {
+    color: white;
+    margin-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+  }
+  .box {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+  }
+
+  .card1 {
+    height: 300px;
+    width: 300px;
+    padding: 35px 35px;
+    background: url(img/arvr.jpg);
+    border-radius: 15px;
+    margin: 35px;
+    position: relative;
+    text-align: center;
+    transform: scale(1);
+    transition: all 0.3s ease-out;
+  }
+  .card1:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in;
+  }
+  .button {
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 5px;
+    transition: 0.4s;
+    position: relative;
+  }
+  .button:hover {
+    background-color: #f29727;
+    border: 2px solid #f29727;
+    cursor: pointer;
+  }
+  .card2 {
+    height: 300px;
+    width: 300px;
+    padding: 35px 35px;
+    background: url(img/vid.jpg);
+    border-radius: 15px;
+    margin: 35px;
+    position: relative;
+    text-align: center;
+    transform: scale(1);
+    transition: all 0.3s ease-out;
+  }
+  .card2:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in;
+  }
+  .card3 {
+    height: 300px;
+    width: 300px;
+    padding: 35px 35px;
+    background: url(img/aplikasiSI.jpg);
+    border-radius: 15px;
+    margin: 35px;
+    position: relative;
+    text-align: center;
+    transform: scale(1);
+    transition: all 0.3s ease-out;
+  }
+
+  .wa_btn {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    text-decoration: none;
+    color: green;
+    font-size: 37px;
+  }
+  .wa_btn:hover {
+    color: #f29727;
+    transition: all 0.2s ease-in;
+  }
+  .ISI {
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #e8eaff;
+  }
+
+  
+      /* FOOTER */
+      footer {
+        margin-top: 100px;
+        background-color: #0c134f;
+        padding: 20px 0;
+        display: flex;
+      }
+  
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+      }
+  
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+  
+      .footer-left,
+      .footer-right {
+        flex-basis: 30%;
+        padding: 20px;
+      }
+  
+      .footer-bottom {
+        margin-top: 30px;
+        text-align: center;
+      }
+  
+      footer h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: white;
+      }
+  
+      footer p {
+        margin: 0;
+        color: #ffffff;
+      }
